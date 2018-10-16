@@ -24,7 +24,7 @@ import java.util.zip.ZipOutputStream;
 /**
  * Реализация расчёта и высталения счетов абонентам оператора.
  *
- * @author Sergey Morgunov {@literal <smorgunov@at-consulting.ru>}
+ * @author Gamezo Vladislav, Sergey Morgunov {@literal <smorgunov@at-consulting.ru>}
  */
 public class BillingEngineImpl implements BillingEngine {
 
