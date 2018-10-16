@@ -1,0 +1,35 @@
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'checkstyle'
+apply plugin: 'jacoco'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile 'commons-cli:commons-cli:1.4'
+
+  testCompile 'junit:junit:4.12'
+  testCompile 'org.mockito:mockito-core:2.+'
+  testCompile 'com.github.stefanbirkner:system-rules:1.16.0'
+  testCompile 'io.rest-assured:json-path:3.0.3'
+}
+
+checkstyle {
+  toolVersion '7.7'
+  ignoreFailures true
+  checkstyleTest.exclude '*'
+}
+
+jacoco {
+  toolVersion '0.7.9'
+}
+
+distributions {
+  main {
+    baseName = 'billing'
+  }
+}
+
+mainClassName = 'org.worlditplanet.java.BillingApp'

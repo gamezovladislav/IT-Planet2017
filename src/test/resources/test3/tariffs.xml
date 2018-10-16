@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tariffs>
+  <tariff id="1" name="Вся планета">
+    <prices>
+      <abonentFee value="100.00"/>
+      <sms value="1.00"/>
+      <call value="1.50" />
+      <internet value="3.00" uom="mb"/>
+    </prices>
+    <packets>
+      <sms value="0"/>
+      <call value="400" />
+      <internet value="3" uom="gb"/>
+    </packets>
+  </tariff>
+</tariffs>
